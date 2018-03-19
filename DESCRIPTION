@@ -1,0 +1,20 @@
+Package: EMsem
+Title: An implementation of simultaneous EM estimation of a structural equation model and its latent factors
+Version: 0.0.0.9000
+Authors@R: person("Myriam", "Tami", email = "myriam.tami@univ-grenoble-alpes.fr", role = c("aut", "cre"))
+Description: Fits structural equation models using EM algorithm.  More precisely, 
+  the model is a multi-block latent factor model with one structural equation which
+  the latent variables are latent factors. The EM approach consists in viewing 
+  the latent factors as missing data and using the EM algorithm to maximize 
+  the whole model’s likelihood, which simultaneously provides estimators not only 
+  of the model’s coefficients, but also of the values of latent factors.
+Depends: R (>= 3.3.3)
+License: GPL ( >=3.0)
+Encoding: UTF-8
+LazyData: true
+Imports:
+  expm,
+  graphics,
+  FactoMineR,
+  MASS
+RoxygenNote: 6.0.1
